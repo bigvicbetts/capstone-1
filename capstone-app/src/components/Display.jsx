@@ -1,22 +1,15 @@
 import React from 'react'
 
-function Display(props) {
-
-    const displayArray = [];
+function Display(props) {   
 
     const returnName = (item) => {
         const itemName = item.Name.toUpperCase()
         if (item.Quantity > 0) {  // Display all items with quantities greater than zero...
-            if (props.searchResult === '') {  // if the search string is empty.
+            if (itemName.includes(props.searchResult.toUpperCase())) {  // if the search string is empty.
                 return (
                     item.Name
                 )
-            }                   // If search result is NOT empty, display all items with quantities greater
-            else if (itemName.includes(props.searchResult.toUpperCase())) { // than zero which contain the
-                return (                                                    // current search term.
-                    item.Name
-                )
-            }
+            }                   
         }
 
     }
