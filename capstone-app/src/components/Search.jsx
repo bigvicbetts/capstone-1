@@ -3,7 +3,7 @@ import React from 'react'
 function Search(props) {
 
     const sendSearch = (e) => {
-        props.searchResult(e.target.value);
+        props.searchResult(e.target.value.toUpperCase());
     }
 
     return (

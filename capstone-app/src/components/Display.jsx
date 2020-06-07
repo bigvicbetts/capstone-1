@@ -14,15 +14,19 @@ function Display(props) {
 
     }
 
-    console.log(props.searchResult.toUpperCase());
+    
+    
+    console.log(props.searchResult);
 
     return (
         <div>
             <h1>This is Display</h1>
             <ul>
-            {props.inventory.map((item, i) => <li key={i}>
+            {props.display.map((item, i) => <div key={i} className='item'>
+            <li style={{listStyle: 'none'}}>
                 {returnName(item)}
-            </li>)}
+            </li>
+            </div> )}
             </ul>
         </div>
     )

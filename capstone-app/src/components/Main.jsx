@@ -6,6 +6,7 @@ function Main() {
 
     const [inventory, setInventory] = useState([{
         Name: 'Book 2',
+        NameUpper: 'BOOK 2',
         Serial: 'LIT2',
         Price: 500,
         Manufacturer: 'Isaac Asimov',
@@ -14,6 +15,7 @@ function Main() {
     },
     {
         Name: 'Book 1',
+        NameUpper: 'BOOK 1',
         Serial: 'LIT1',
         Price: 1000,
         Manufacturer: 'Douglas Adams',
@@ -22,6 +24,7 @@ function Main() {
     },
     {
         Name: 'Book 3',
+        NameUpper: 'BOOK 3',
         Serial: 'LIT3',
         Price: 1500,
         Manufacturer: 'Dave Barry',
@@ -30,6 +33,7 @@ function Main() {
     },
     {
         Name: 'Movie 1',
+        NameUpper: 'MOVIE 1',
         Serial: 'MOV1',
         Price: 1000,
         Manufacturer: 'Disney',
@@ -38,6 +42,7 @@ function Main() {
     },
     {
         Name: 'Movie 2',
+        NameUpper: 'MOVIE 2',
         Serial: 'MOV2',
         Price: 500,
         Manufacturer: 'Pixar',
@@ -46,6 +51,7 @@ function Main() {
     },
     {
         Name: 'Movie 3',
+        NameUpper: 'MOVIE 3',
         Serial: 'MOV3',
         Price: 1000,
         Manufacturer: 'Universal Studios',
@@ -54,6 +60,7 @@ function Main() {
     },
     {
         Name: 'Audiobook 1',
+        NameUpper: 'AUDIOBOOK 1',
         Serial: 'AUD1',
         Price: 500,
         Manufacturer: 'Douglas Adams',
@@ -62,6 +69,7 @@ function Main() {
     },
     {
         Name: 'Audiobook 2',
+        NameUpper: 'AUDIOBOOK 2',
         Serial: 'AUD2',
         Price: 1000,
         Manufacturer: 'Isaac Asimov',
@@ -70,6 +78,7 @@ function Main() {
     },
     {
         Name: 'Audiobook 3',
+        NameUpper: 'AUDIOBOOK 3',
         Serial: 'AUD1',
         Price: 1500,
         Manufacturer: 'Herman Melville',
@@ -85,11 +94,15 @@ function Main() {
         setSearchResult(result);
     }
 
+    const displayResut = inventory.filter(function(item) {
+        return item.Quantity > 0 && item.NameUpper.includes(searchResult)
+    })
+
     return (
         <div>
             <h1>This is Main</h1>
             <Search searchResult={getSearchResult}/>
-            <Display inventory={inventory} searchResult={searchResult}/>
+            <Display display={displayResut} searchResult={searchResult}/>
         </div>
     )
 }
