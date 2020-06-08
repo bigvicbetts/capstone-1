@@ -2,21 +2,9 @@ import React from 'react'
 
 function Display(props) {   
 
-    const returnName = (item) => {
-        const itemName = item.Name.toUpperCase()
-        if (item.Quantity > 0) {  // Display all items with quantities greater than zero...
-            if (itemName.includes(props.searchResult.toUpperCase())) {  // if the search string is empty.
-                return (
-                    item.Name
-                )
-            }                   
-        }
-
+    const toCart = (i) => {
+        props.addToCart(i);
     }
-
-    
-    
-    console.log(props.searchResult);
 
     return (
         <div>
@@ -24,7 +12,9 @@ function Display(props) {
             <ul>
             {props.display.map((item, i) => <div key={i} className='item'>
             <li style={{listStyle: 'none'}}>
-                {returnName(item)}
+                {item.Name}
+                <button onClick={() => toCart(i)}>Add To Cart</button>
+    <p>There are {item.Quantity} units on hand.</p> 
             </li>
             </div> )}
             </ul>
