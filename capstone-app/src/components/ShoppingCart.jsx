@@ -6,6 +6,15 @@ function ShoppingCart(props) {
         props.removeFromCart(i);
     }
 
+    const qtySelect = (num) => {
+        let qty = [];
+        for (let i = 1; i <= num; i++) {
+            qty.push(i);
+        }
+        return qty;
+    }
+
+    
     return (
         <div>
             <h1>This is ShoppingCart</h1>
@@ -14,9 +23,16 @@ function ShoppingCart(props) {
             <li style={{listStyle: 'none'}}>
                 {item.Name}
                 <button onClick={() => fromCart(i)}>Remove From Cart</button>
+                <label HTMLfor="{item.Serial}">Select Quantity</label>
+                <select name={item.Name} id="Quantity">
+                    {qtySelect(item.Quantity).map((item) => 
+                    <option id={item}>{item}</option>)}
+                </select>
+
             </li>
-            </div> )}
+        </div> )}
             </ul>
+            <button>Buy Now</button>
         </div>
     )
 }
