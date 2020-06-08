@@ -21,7 +21,7 @@ function Main() {
 
 const [shoppingCart, setShoppingCart] = useState([]);
 
-let display = inventory.filter(function(item) {
+const display = inventory.filter(function(item) {
     return item.Quantity > 0 && item.NameUpper.includes(searchResult) &&!shoppingCart.includes(item);
 })
 
@@ -30,13 +30,18 @@ const addToCart = (item) => {
     setShoppingCart([...shoppingCart, toAdd[0]])
 }
 
+const removeFromCart = (index) => {
+    const notRemoved = shoppingCart.filter((val, ind) => ind !== index);
+    setShoppingCart(notRemoved);
+}
+
 
     return (
         <div>
             <h1>This is Main</h1>
             <Search searchResult={getSearchResult}/>
             <Display display={display} searchResult={searchResult} addToCart={addToCart}/>
-            <ShoppingCart shoppingCart={shoppingCart}/>
+            <ShoppingCart shoppingCart={shoppingCart} removeFromCart={removeFromCart}/>
         </div>
     )
 }
