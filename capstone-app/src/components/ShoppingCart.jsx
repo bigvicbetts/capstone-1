@@ -1,11 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function ShoppingCart(props) {
 
-    const fromCart = (i) => {
-        props.removeFromCart(i);
-    }
-
+    // Returns array of numbers upto the items total quantity for the select quantity option.
     const qtySelect = (num) => {
         let qty = [];
         for (let i = 1; i <= num; i++) {
@@ -14,7 +11,13 @@ function ShoppingCart(props) {
         return qty;
     }
 
-    
+    const [arr, setArr] = useState([])
+
+    const handleChange = (e, i) => {
+        let temp = [i, e.target.value]  
+        setArr([...arr, temp])
+    }
+    console.log(arr) // This is for testing purposes only.
     return (
         <div>
             <h1>This is ShoppingCart</h1>
@@ -22,11 +25,11 @@ function ShoppingCart(props) {
             {props.shoppingCart.map((item, i) => <div key={i} className='item'>
             <li style={{listStyle: 'none'}}>
                 {item.Name}
-                <button onClick={() => fromCart(i)}>Remove From Cart</button>
+                <button onClick={() => props.removeFromCart(i)}>Remove From Cart</button>
                 <label HTMLfor="{item.Serial}">Select Quantity</label>
-                <select name={item.Name} id="Quantity">
-                    {qtySelect(item.Quantity).map((item) => 
-                    <option id={item}>{item}</option>)}
+                <select name={item.Name} id="Quantity" onChange={(e) => handleChange(e, i)}>
+                    {qtySelect(item.Quantity).map((qty) => 
+                    <option key={qty} value={qty} >{qty}</option>)}
                 </select>
 
             </li>

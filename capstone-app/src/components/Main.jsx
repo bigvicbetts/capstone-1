@@ -8,6 +8,9 @@ function Main() {
 
     const [inventory, setInventory] = useState(data)
 
+    const updateCount = (qty, ind) => {
+        console.log(qty, ind);
+    }
 /////////////////////////////////////////////////////////
 // This BEGINS the search functionality for the website.
     const [searchResult, setSearchResult] = useState('');
@@ -22,7 +25,7 @@ function Main() {
 const [shoppingCart, setShoppingCart] = useState([]);
 
 const display = inventory.filter(function(item) {
-    return item.Quantity > 0 && item.NameUpper.includes(searchResult) &&!shoppingCart.includes(item);
+    return item.Quantity > 0 && item.NameUpper.includes(searchResult) && !shoppingCart.includes(item);
 })
 
 const addToCart = (item) => {
@@ -35,13 +38,12 @@ const removeFromCart = (index) => {
     setShoppingCart(notRemoved);
 }
 
-
     return (
         <div>
             <h1>This is Main</h1>
             <Search searchResult={getSearchResult}/>
             <Display display={display} searchResult={searchResult} addToCart={addToCart}/>
-            <ShoppingCart shoppingCart={shoppingCart} removeFromCart={removeFromCart}/>
+            <ShoppingCart shoppingCart={shoppingCart} removeFromCart={removeFromCart} updateCount={updateCount}/>
         </div>
     )
 }
