@@ -3,5 +3,31 @@
 }
 
 .item {
+  display: inline-flex;
+  background-color: aquamarine;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: solid red thin;
+  border-radius: 10%;
+  width: 25rem;
+  height: 25rem;
+  margin: 1rem;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+img {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  border: solid blue thin;
 }

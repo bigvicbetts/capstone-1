@@ -2,15 +2,34 @@ import React, {useState} from 'react'
 import Search from './Search'
 import Display from './Display'
 import ShoppingCart from './ShoppingCart'
-import data from './data.json'
+import data from '../data.json'
 
 function Main() {
 
     const [inventory, setInventory] = useState(data)
 
-    const updateCount = (qty, ind) => {
-        console.log(qty, ind);
+    const updateCount = (arr) => {
+        // console.log(arr);
+        //console.log(shoppingCart);
+        //const updatedCount = shoppingCart.map(function(item, i) {
+        //    console.log(item.Name, item.Quantity - (+arr[i][1]));
+        //})
+        setShoppingCart(shoppingCart.map(function(item, i) {
+            item.Quantity = item.Quantity - (+arr[i][1])
+        }))
+
+        const shoppingCartSerial = shoppingCart.map((item) => {return item.Serial})
+        const newCart = inventory.filter((item) => {
+            return !shoppingCartSerial.includes(item.Serial)
+        })
+        shoppingCart.map((item) => {
+            newCart.splice(0, 0, item)
+        })
+        setShoppingCart([])
+        setInventory(newCart)
+        
     }
+    console.log(inventory)
 /////////////////////////////////////////////////////////
 // This BEGINS the search functionality for the website.
     const [searchResult, setSearchResult] = useState('');
@@ -24,7 +43,7 @@ function Main() {
 
 const [shoppingCart, setShoppingCart] = useState([]);
 
-const display = inventory.filter(function(item) {
+let display = inventory.filter(function(item) {
     return item.Quantity > 0 && item.NameUpper.includes(searchResult) && !shoppingCart.includes(item);
 })
 

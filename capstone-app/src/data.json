@@ -2,8 +2,9 @@
             {
                 "Name": "Book 1",
                 "NameUpper": "BOOK 1",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "LIT1",
-                "Price": 500,
+                "Price": 5.99,
                 "Manufacturer": "Isaac Asimov",
                 "Quantity" : 10,
                 "Category": "Book"
@@ -11,8 +12,9 @@
             {
                 "Name": "Book 2",
                 "NameUpper": "BOOK 2",
-                "Serial": "LIT3",
-                "Price": 1000,
+                "Image": "Hitchhikers(2).jpg",
+                "Serial": "LIT2",
+                "Price": 10.50,
                 "Manufacturer": "Dave Barry",
                 "Quantity" : 10,
                 "Category": "Book"
@@ -20,8 +22,9 @@
             {
                 "Name": "Book 3",
                 "NameUpper": "BOOK 3",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "LIT3",
-                "Price": 1500,
+                "Price": 15.30,
                 "Manufacturer": "Isaac Asimov",
                 "Quantity" : 10,
                 "Category": "Book"
@@ -29,8 +32,9 @@
             {
                 "Name": "Movie 2",
                 "NameUpper": "MOVIE 2",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "MOV2",
-                "Price": 500,
+                "Price": 5.25,
                 "Manufacturer": "Disney",
                 "Quantity" : 10,
                 "Category": "Movie"
@@ -38,8 +42,9 @@
             {
                 "Name": "Movie 1",
                 "NameUpper": "MOVIE 1",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "MOV1",
-                "Price": 1000,
+                "Price": 10.45,
                 "Manufacturer": "Pixar",
                 "Quantity" : 10,
                 "Category": "Movie"
@@ -47,17 +52,19 @@
             {
                 "Name": "Movie 3",
                 "NameUpper": "MOVIE 3",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "MOV3",
-                "Price": 1500,
-                "Manufacturer": "Universal Studios",
+                "Price": 15.20,
+                "Image": "Hitchhikers(2).jpg",
                 "Quantity" : 10,
                 "Category": "Movie"
             },
             {
                 "Name": "Audiobook 2",
                 "NameUpper": "AUDIOBOOK 2",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "AUD2",
-                "Price": 500,
+                "Price": 5.50,
                 "Manufacturer": "Dave Barry",
                 "Quantity" : 0,
                 "Category": "Audiobook"
@@ -65,8 +72,9 @@
             {
                 "Name": "Audiobook 1",
                 "NameUpper": "AUDIOBOOK 1",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "AUD1",
-                "Price": 1500,
+                "Price": 15.35,
                 "Manufacturer": "Douglas Adams",
                 "Quantity" : 10,
                 "Category": "Audiobook"
@@ -74,8 +82,9 @@
             {
                 "Name": "Audiobook 3",
                 "NameUpper": "AUDIOBOOK 3",
+                "Image": "Hitchhikers(2).jpg",
                 "Serial": "AUD3",
-                "Price": 1000,
+                "Price": 10.60,
                 "Manufacturer": "Isaac Asimov",
                 "Quantity" : 10,
                 "Category": "Audiobook"

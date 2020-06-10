@@ -9,15 +9,20 @@ function Display(props) {
     return (
         <div>
             <h1>This is Display</h1>
-            <ul>
-            {props.display.map((item, i) => <div key={i} className='item'>
-            <li style={{listStyle: 'none'}}>
-                {item.Name} ${item.Price/100}
-                <button onClick={() => toCart(i)}>Add To Cart</button>
-    <p>There are {item.Quantity} units on hand.</p> 
-            </li>
+            
+            {props.display.map((item, i) => 
+            <div key={i} className='item'>
+                <div>
+                    {item.Name}
+                    <img src = {item.Image} alt = 'TH.com logo' className = 'logo' />
+                    ${item.Price.toFixed(2)}
+                        <div className='submit'>
+                            <p>There are {item.Quantity} units on hand.</p> 
+                            <button onClick={() => toCart(i)}>Add To Cart</button>
+                        </div>
+                </div>
             </div> )}
-            </ul>
+            
         </div>
     )
 }

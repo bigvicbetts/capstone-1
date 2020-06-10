@@ -5,7 +5,7 @@ function ShoppingCart(props) {
     // Returns array of numbers upto the items total quantity for the select quantity option.
     const qtySelect = (num) => {
         let qty = [];
-        for (let i = 1; i <= num; i++) {
+        for (let i = 0; i <= num; i++) {
             qty.push(i);
         }
         return qty;
@@ -14,10 +14,11 @@ function ShoppingCart(props) {
     const [arr, setArr] = useState([])
 
     const handleChange = (e, i) => {
-        let temp = [i, e.target.value]  
+        let temp = [i, e.target.value];
         setArr([...arr, temp])
     }
-    console.log(arr) // This is for testing purposes only.
+    
+    //console.log(arr) // This is for testing purposes only.
     return (
         <div>
             <h1>This is ShoppingCart</h1>
@@ -35,7 +36,7 @@ function ShoppingCart(props) {
             </li>
         </div> )}
             </ul>
-            <button>Buy Now</button>
+            <button onClick={() => props.updateCount(arr)}>Buy Now</button>
         </div>
     )
 }
