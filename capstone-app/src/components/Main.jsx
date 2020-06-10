@@ -9,11 +9,7 @@ function Main() {
     const [inventory, setInventory] = useState(data)
 
     const updateCount = (arr) => {
-        // console.log(arr);
-        //console.log(shoppingCart);
-        //const updatedCount = shoppingCart.map(function(item, i) {
-        //    console.log(item.Name, item.Quantity - (+arr[i][1]));
-        //})
+
         setShoppingCart(shoppingCart.map(function(item, i) {
             item.Quantity = item.Quantity - (+arr[i][1])
         }))

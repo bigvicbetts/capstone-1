@@ -13,8 +13,8 @@ function Display(props) {
             {props.display.map((item, i) => 
             <div key={i} className='item'>
                 <div>
-                    {item.Name}
-                    <img src = {item.Image} alt = 'TH.com logo' className = 'logo' />
+                    <h2>{item.Name}</h2>
+                    <img src = {item.Image} alt={item.Name} />
                     ${item.Price.toFixed(2)}
                         <div className='submit'>
                             <p>There are {item.Quantity} units on hand.</p> 

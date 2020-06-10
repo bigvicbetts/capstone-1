@@ -1,28 +1,28 @@
 [
             {
-                "Name": "Book 1",
-                "NameUpper": "BOOK 1",
-                "Image": "Hitchhikers(2).jpg",
+                "Name": "And Another Thing",
+                "NameUpper": "AND ANOTHER THING",
+                "Image": "images/And_Another_Thing.jpg",
                 "Serial": "LIT1",
                 "Price": 5.99,
-                "Manufacturer": "Isaac Asimov",
+                "Author": "Eoin Colfer",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
-                "Name": "Book 2",
-                "NameUpper": "BOOK 2",
-                "Image": "Hitchhikers(2).jpg",
+                "Name": "Foundation And Empire",
+                "NameUpper": "FOUNDATION AND EMPIRE",
+                "Image": "images/Foundation_And_Empire.jpg",
                 "Serial": "LIT2",
                 "Price": 10.50,
-                "Manufacturer": "Dave Barry",
+                "Author": "Isaac Asimov",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
-                "Name": "Book 3",
-                "NameUpper": "BOOK 3",
-                "Image": "Hitchhikers(2).jpg",
+                "Name": "Foundation",
+                "NameUpper": "FOUNDATION",
+                "Image": "images/Foundation.jpg",
                 "Serial": "LIT3",
                 "Price": 15.30,
                 "Manufacturer": "Isaac Asimov",
@@ -30,63 +30,123 @@
                 "Category": "Book"
             },
             {
-                "Name": "Movie 2",
-                "NameUpper": "MOVIE 2",
-                "Image": "Hitchhikers(2).jpg",
-                "Serial": "MOV2",
+                "Name": "Hitchhiker's Guide to the Galaxy",
+                "NameUpper": "HITCHHIKER'S GUIDE TO THE GALAXY",
+                "Image": "images/Hitchhikers_Guide_To_The_Galaxy.jpg",
+                "Serial": "LIT4",
                 "Price": 5.25,
-                "Manufacturer": "Disney",
+                "Author": "Douglas Adams",
                 "Quantity" : 10,
-                "Category": "Movie"
+                "Category": "Book"
             },
             {
-                "Name": "Movie 1",
-                "NameUpper": "MOVIE 1",
-                "Image": "Hitchhikers(2).jpg",
-                "Serial": "MOV1",
+                "Name": "Life, The Universe, and Everything",
+                "NameUpper": "LIFE, THE UNIVERSE, AND EVERYTHING",
+                "Image": "images/Life_The_Universe_And_Everything.jpg",
+                "Serial": "LIT5",
                 "Price": 10.45,
-                "Manufacturer": "Pixar",
+                "Author": "Douglas Adams",
                 "Quantity" : 10,
-                "Category": "Movie"
+                "Category": "Book"
             },
             {
-                "Name": "Movie 3",
-                "NameUpper": "MOVIE 3",
-                "Image": "Hitchhikers(2).jpg",
-                "Serial": "MOV3",
+                "Name": "Mostly Harmless",
+                "NameUpper": "MOSTLY HARMLESS",
+                "Image": "images/Mostly_Harmless.jpg",
+                "Serial": "LIT6",
                 "Price": 15.20,
-                "Image": "Hitchhikers(2).jpg",
+                "Author": "Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Restaurant at the End of the Universe",
+                "NameUpper": "RESTAURANT AT THE END OF THE UNIVERSE",
+                "Image": "images/Restaurant_At_The_End_Of_The_Universe.jpg",
+                "Serial": "LIT7",
+                "Price": 5.50,
+                "Author": "Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Second Foundation",
+                "NameUpper": "SECOND FOUNDATION",
+                "Image": "images/Second_Foundation.jpg",
+                "Serial": "LIT8",
+                "Price": 15.35,
+                "Author": "Isaac Asimov",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "So Long and Thanks for All the Fish",
+                "NameUpper": "SO LONG AND THANKS FOR ALL THE FISH",
+                "Image": "images/So_Long_And_Thanks_For_All_The_Fish.jpg",
+                "Serial": "LIT9",
+                "Price": 10.60,
+                "Author": "Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Bill and Ted's Excellent Adventure",
+                "NameUpper": "BILL AND TED'S EXCELLENT ADVENTURE",
+                "Image": "images/BillAndTeds.jpg",
+                "Serial": "MOV1",
+                "Price": 15.00,
+                "Studio": "Orion Pictures",
                 "Quantity" : 10,
                 "Category": "Movie"
             },
             {
-                "Name": "Audiobook 2",
-                "NameUpper": "AUDIOBOOK 2",
-                "Image": "Hitchhikers(2).jpg",
-                "Serial": "AUD2",
-                "Price": 5.50,
-                "Manufacturer": "Dave Barry",
-                "Quantity" : 0,
-                "Category": "Audiobook"
+                "Name": "Clue",
+                "NameUpper": "CLUE",
+                "Image": "images/Clue.jpg",
+                "Serial": "MOV2",
+                "Price": 16.95,
+                "Studio": "Paramount Pictures",
+                "Quantity" : 10,
+                "Category": "Movie"
             },
             {
-                "Name": "Audiobook 1",
-                "NameUpper": "AUDIOBOOK 1",
-                "Image": "Hitchhikers(2).jpg",
-                "Serial": "AUD1",
+                "Name": "Monty Python and the Holy Grail",
+                "NameUpper": "MONTY PYTHON AND THE HOLY GRAIL",
+                "Image": "images/HolyGrail.jpg",
+                "Serial": "MOV3",
+                "Price": 14.75,
+                "Studio": "Python (Monty) Pictures ",
+                "Quantity" : 10,
+                "Category": "Movie"
+            },
+            {
+                "Name": "The Jungle Book",
+                "NameUpper": "THE JUNGLE BOOK",
+                "Image": "images/JungleBook.jpg",
+                "Serial": "MOV4",
+                "Price": 12.65,
+                "Studio": "United Artists",
+                "Quantity" : 10,
+                "Category": "Movie"
+            },
+            {
+                "Name": "Oscar",
+                "NameUpper": "OSCAR",
+                "Image": "images/Oscar.jpg",
+                "Serial": "MOV5",
                 "Price": 15.35,
-                "Manufacturer": "Douglas Adams",
+                "Studio": "Buena Vista Pictures",
                 "Quantity" : 10,
-                "Category": "Audiobook"
+                "Category": "Movie"
             },
             {
-                "Name": "Audiobook 3",
-                "NameUpper": "AUDIOBOOK 3",
-                "Image": "Hitchhikers(2).jpg",
-                "Serial": "AUD3",
-                "Price": 10.60,
-                "Manufacturer": "Isaac Asimov",
+                "Name": "The Princess Bride",
+                "NameUpper": "THE PRINCESS BRIDE",
+                "Image": "images/PrincessBride.jpg",
+                "Serial": "MOV6",
+                "Price": 16.25,
+                "Studio": "20th Century Fox",
                 "Quantity" : 10,
-                "Category": "Audiobook"
+                "Category": "Movie"
             }
         ]
