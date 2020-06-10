@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 import Search from './Search'
 import Display from './Display'
 import ShoppingCart from './ShoppingCart'
+import Nav from './Nav'
 import data from '../data.json'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function Main() {
 
@@ -56,9 +58,16 @@ const removeFromCart = (index) => {
     return (
         <div>
             <h1>This is Main</h1>
+            <Router>
+            <Nav />
             <Search searchResult={getSearchResult}/>
-            <Display display={display} searchResult={searchResult} addToCart={addToCart}/>
-            <ShoppingCart shoppingCart={shoppingCart} removeFromCart={removeFromCart} updateCount={updateCount}/>
+                <Route path='/display'>
+                <Display display={display} searchResult={searchResult} addToCart={addToCart}/>
+                </Route>
+                <Route path='/cart'>
+                <ShoppingCart shoppingCart={shoppingCart} removeFromCart={removeFromCart} updateCount={updateCount}/>
+                </Route>
+            </Router>
         </div>
     )
 }
