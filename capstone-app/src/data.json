@@ -1,0 +1,137 @@
+[
+            {
+                "Name": "And Another Thing",
+                "Image": "images/And_Another_Thing.jpg",
+                "Serial": "LIT1",
+                "Price": 5.99,
+                "About": "By Eoin Colfer",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Foundation And Empire",
+                "Image": "images/Foundation_And_Empire.jpg",
+                "Serial": "LIT2",
+                "Price": 10.50,
+                "About": "By Isaac Asimov",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Foundation",
+                "Image": "images/Foundation.jpg",
+                "Serial": "LIT3",
+                "Price": 15.30,
+                "About": "By Isaac Asimov",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Hitchhiker's Guide to the Galaxy",
+                "Image": "images/Hitchhikers_Guide_To_The_Galaxy.jpg",
+                "Serial": "LIT4",
+                "Price": 5.25,
+                "About": "By Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Life, The Universe, and Everything",
+                "Image": "images/Life_The_Universe_And_Everything.jpg",
+                "Serial": "LIT5",
+                "Price": 10.45,
+                "About": "By Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Mostly Harmless",
+                "Image": "images/Mostly_Harmless.jpg",
+                "Serial": "LIT6",
+                "Price": 15.20,
+                "About": "By Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Restaurant at the End of the Universe",
+                "Image": "images/Restaurant_At_The_End_Of_The_Universe.jpg",
+                "Serial": "LIT7",
+                "Price": 5.50,
+                "About": "By Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Second Foundation",
+                "Image": "images/Second_Foundation.jpg",
+                "Serial": "LIT8",
+                "Price": 15.35,
+                "About": "By Isaac Asimov",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "So Long and Thanks for All the Fish",
+                "Image": "images/So_Long_And_Thanks_For_All_The_Fish.jpg",
+                "Serial": "LIT9",
+                "Price": 10.60,
+                "About": "By Douglas Adams",
+                "Quantity" : 10,
+                "Category": "Book"
+            },
+            {
+                "Name": "Bill and Ted's Excellent Adventure",
+                "Image": "images/BillAndTeds.jpg",
+                "Serial": "MOV1",
+                "Price": 15.00,
+                "About": "Distributed by Orion Pictures",
+                "Quantity" : 10,
+                "Category": "Movie"
+            },
+            {
+                "Name": "Clue",
+                "Image": "images/Clue.jpg",
+                "Serial": "MOV2",
+                "Price": 16.95,
+                "About": "Distributed by Paramount Pictures",
+                "Quantity" : 10,
+                "Category": "Movie"
+            },
+            {
+                "Name": "Monty Python and the Holy Grail",
+                "Image": "images/HolyGrail.jpg",
+                "Serial": "MOV3",
+                "Price": 14.75,
+                "About": "Distributed by Python (Monty) Pictures ",
+                "Quantity" : 10,
+                "Category": "Movie"
+            },
+            {
+                "Name": "The Jungle Book",
+                "Image": "images/JungleBook.jpg",
+                "Serial": "MOV4",
+                "Price": 12.65,
+                "About": "Distributed by United Artists",
+                "Quantity" : 10,
+                "Category": "Movie"
+            },
+            {
+                "Name": "Oscar",
+                "Image": "images/Oscar.jpg",
+                "Serial": "MOV5",
+                "Price": 15.35,
+                "About": "Distributed by Buena Vista Pictures",
+                "Quantity" : 10,
+                "Category": "Movie"
+            },
+            {
+                "Name": "The Princess Bride",
+                "Image": "images/PrincessBride.jpg",
+                "Serial": "MOV6",
+                "Price": 16.25,
+                "About": "Distributed by 20th Century Fox",
+                "Quantity" : 10,
+                "Category": "Movie"
+            }
+        ]
