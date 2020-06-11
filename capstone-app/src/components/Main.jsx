@@ -3,8 +3,9 @@ import Search from './Search'
 import Display from './Display'
 import ShoppingCart from './ShoppingCart'
 import Nav from './Nav'
+import Header from './Header'
 import data from '../data.json'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 function Main() {
 
@@ -20,14 +21,17 @@ function Main() {
         const newCart = inventory.filter((item) => {
             return !shoppingCartSerial.includes(item.Serial)
         })
+        
         shoppingCart.map((item) => {
             newCart.splice(0, 0, item)
         })
+
+        
         setShoppingCart([])
         setInventory(newCart)
-        
+        window.alert('Payment Confirmed');
     }
-    console.log(inventory)
+
 /////////////////////////////////////////////////////////
 // This BEGINS the search functionality for the website.
     const [searchResult, setSearchResult] = useState('');
@@ -42,7 +46,7 @@ function Main() {
 const [shoppingCart, setShoppingCart] = useState([]);
 
 let display = inventory.filter(function(item) {
-    return item.Quantity > 0 && item.NameUpper.includes(searchResult) && !shoppingCart.includes(item);
+    return item.Quantity > 0 && item.Name.toUpperCase().includes(searchResult) && !shoppingCart.includes(item);
 })
 
 const addToCart = (item) => {
@@ -57,11 +61,11 @@ const removeFromCart = (index) => {
 
     return (
         <div>
-            <h1>This is Main</h1>
             <Router>
-            <Nav />
-            <Search searchResult={getSearchResult}/>
-                <Route path='/display'>
+                <Header />
+                <Nav />
+                <Route path='/' exact>
+                <Search searchResult={getSearchResult}/>
                 <Display display={display} searchResult={searchResult} addToCart={addToCart}/>
                 </Route>
                 <Route path='/cart'>

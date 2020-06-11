@@ -5,8 +5,8 @@ function Nav() {
     return (
         <nav>
             <ul>
-                <Link to='/display'>
-                <li>Display</li>
+                <Link to='/'>
+                <li>Products</li>
                 </Link>
                 <Link to='cart'>
                 <li>Shopping Cart</li>

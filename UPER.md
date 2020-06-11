@@ -34,11 +34,5 @@ The Shopping Cart component will display all items contained in the Shopping Car
 <h2>
     4. Reflection / Refactor
 </h2>
-*
-*
-*
-*
-*
-*
-*
-*
+
+The only thing that I really had to refactor from my original plan was to institute React Router to navigate between my Display and Shopping Cart components rather than using CSS.  This sounded daunting at first but it was not bad to institute at all.  I was able to get all functionality working in the website and I think I have it looking reasonably good (considering design is not my forte).

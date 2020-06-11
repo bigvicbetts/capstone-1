@@ -8,8 +8,7 @@ function Search(props) {
 
     return (
         <div>
-            <h1>This is Search</h1>
-            <input type='text' onChange={(e) => sendSearch(e)}/>
+            <input className='search' type='text' placeholder='Search' onChange={(e) => sendSearch(e)}/>
         </div>
     )
 }

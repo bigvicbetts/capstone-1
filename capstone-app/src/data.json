@@ -1,151 +1,136 @@
 [
             {
                 "Name": "And Another Thing",
-                "NameUpper": "AND ANOTHER THING",
                 "Image": "images/And_Another_Thing.jpg",
                 "Serial": "LIT1",
                 "Price": 5.99,
-                "Author": "Eoin Colfer",
+                "About": "By Eoin Colfer",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Foundation And Empire",
-                "NameUpper": "FOUNDATION AND EMPIRE",
                 "Image": "images/Foundation_And_Empire.jpg",
                 "Serial": "LIT2",
                 "Price": 10.50,
-                "Author": "Isaac Asimov",
+                "About": "By Isaac Asimov",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Foundation",
-                "NameUpper": "FOUNDATION",
                 "Image": "images/Foundation.jpg",
                 "Serial": "LIT3",
                 "Price": 15.30,
-                "Manufacturer": "Isaac Asimov",
+                "About": "By Isaac Asimov",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Hitchhiker's Guide to the Galaxy",
-                "NameUpper": "HITCHHIKER'S GUIDE TO THE GALAXY",
                 "Image": "images/Hitchhikers_Guide_To_The_Galaxy.jpg",
                 "Serial": "LIT4",
                 "Price": 5.25,
-                "Author": "Douglas Adams",
+                "About": "By Douglas Adams",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Life, The Universe, and Everything",
-                "NameUpper": "LIFE, THE UNIVERSE, AND EVERYTHING",
                 "Image": "images/Life_The_Universe_And_Everything.jpg",
                 "Serial": "LIT5",
                 "Price": 10.45,
-                "Author": "Douglas Adams",
+                "About": "By Douglas Adams",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Mostly Harmless",
-                "NameUpper": "MOSTLY HARMLESS",
                 "Image": "images/Mostly_Harmless.jpg",
                 "Serial": "LIT6",
                 "Price": 15.20,
-                "Author": "Douglas Adams",
+                "About": "By Douglas Adams",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Restaurant at the End of the Universe",
-                "NameUpper": "RESTAURANT AT THE END OF THE UNIVERSE",
                 "Image": "images/Restaurant_At_The_End_Of_The_Universe.jpg",
                 "Serial": "LIT7",
                 "Price": 5.50,
-                "Author": "Douglas Adams",
+                "About": "By Douglas Adams",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Second Foundation",
-                "NameUpper": "SECOND FOUNDATION",
                 "Image": "images/Second_Foundation.jpg",
                 "Serial": "LIT8",
                 "Price": 15.35,
-                "Author": "Isaac Asimov",
+                "About": "By Isaac Asimov",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "So Long and Thanks for All the Fish",
-                "NameUpper": "SO LONG AND THANKS FOR ALL THE FISH",
                 "Image": "images/So_Long_And_Thanks_For_All_The_Fish.jpg",
                 "Serial": "LIT9",
                 "Price": 10.60,
-                "Author": "Douglas Adams",
+                "About": "By Douglas Adams",
                 "Quantity" : 10,
                 "Category": "Book"
             },
             {
                 "Name": "Bill and Ted's Excellent Adventure",
-                "NameUpper": "BILL AND TED'S EXCELLENT ADVENTURE",
                 "Image": "images/BillAndTeds.jpg",
                 "Serial": "MOV1",
                 "Price": 15.00,
-                "Studio": "Orion Pictures",
+                "About": "Distributed by Orion Pictures",
                 "Quantity" : 10,
                 "Category": "Movie"
             },
             {
                 "Name": "Clue",
-                "NameUpper": "CLUE",
                 "Image": "images/Clue.jpg",
                 "Serial": "MOV2",
                 "Price": 16.95,
-                "Studio": "Paramount Pictures",
+                "About": "Distributed by Paramount Pictures",
                 "Quantity" : 10,
                 "Category": "Movie"
             },
             {
                 "Name": "Monty Python and the Holy Grail",
-                "NameUpper": "MONTY PYTHON AND THE HOLY GRAIL",
                 "Image": "images/HolyGrail.jpg",
                 "Serial": "MOV3",
                 "Price": 14.75,
-                "Studio": "Python (Monty) Pictures ",
+                "About": "Distributed by Python (Monty) Pictures ",
                 "Quantity" : 10,
                 "Category": "Movie"
             },
             {
                 "Name": "The Jungle Book",
-                "NameUpper": "THE JUNGLE BOOK",
                 "Image": "images/JungleBook.jpg",
                 "Serial": "MOV4",
                 "Price": 12.65,
-                "Studio": "United Artists",
+                "About": "Distributed by United Artists",
                 "Quantity" : 10,
                 "Category": "Movie"
             },
             {
                 "Name": "Oscar",
-                "NameUpper": "OSCAR",
                 "Image": "images/Oscar.jpg",
                 "Serial": "MOV5",
                 "Price": 15.35,
-                "Studio": "Buena Vista Pictures",
+                "About": "Distributed by Buena Vista Pictures",
                 "Quantity" : 10,
                 "Category": "Movie"
             },
             {
                 "Name": "The Princess Bride",
-                "NameUpper": "THE PRINCESS BRIDE",
                 "Image": "images/PrincessBride.jpg",
                 "Serial": "MOV6",
                 "Price": 16.25,
-                "Studio": "20th Century Fox",
+                "About": "Distributed by 20th Century Fox",
                 "Quantity" : 10,
                 "Category": "Movie"
             }
